@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+header{
+    width: 100%;
+    height: 50px;
+    background: #000000;
+}
+
+.header-container{
+    width: 100%;
+    max-width: 1250px;
+}
+
+.logo-nav-container{
+	display: flex;
+	justify: space-between;
+	aling-items: center;
+    list-style: none;
+}
+
+	.logo {
+	letter spacing: 10px;
+	font-size: 1.6em;
+         list-style: none;
+        margin-right: 15px;
+
+}
+
+	.navigation ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+        
+}
+
+	.navigation ul li{
+		display: inline-block;
+         list-style: none;
+}
+
+	.navigation ul li a{
+		display: block;
+		padding: 0.5rem 2.5em;
+		border-radius: 5px;
+		transition: all 0.6s linear;
+         list-style: none;
+     
+}
+
+	.navigation ul li a:hover{
+		background: #BC0CFF;
+		color: #AC71FF;
+         list-style: none;
+}
+
+
+.logo-title{
+    display: flex; /*llevamos a la derecha el texto*/
+}
+
+.logo-title img{
+    width:60px;
+    height: 50px;
+    margin-top: 3px;
+    margin-left: 8px;
+}
+
+.logo-title h4{
+    color: white;
+    font-weight: 200;
+    margin-left: 20px;
+    margin-top: 16px;
+}
+/*INICIAMOS CON LA IMAGEN EN MOVIMIENTO*/
+.caratula-container{
+    width: 100%;
+    height: 750px;
+    /*background: #5928FF;*/
+    background-image: url( "../img/Tendencias-y-uso-de-tipos-de-tipografía-en-diseño-gráfico-2020.png");
+    background-size: 35%;
+    animation: grafico 8s infinite linear alternate;
+    position: relative;
+    margin-top: -20px;
+}
+
+@keyframes grafico{
+    from{
+        background-position: right top;
+ }to{ 
+     background-position: bottom left;
+    }
+}
+
+.capa-gradient{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: -webkit-linear-gradient(bottom,#FAEA48, #96178A,
+#172A96,#000000); /*siempre lleva el webkit*/
+    opacity: 0.6;
+}
+
+.container-details{
+    width: 100%;
+    max-width: 1250px;
+    position: relative;
+}
+
+.details{
+    width: 100%;
+    max-width: 60%;
+    position: relative;
+    color:white;
+    margin-top: 0px;
+    margin-left: 25px;
+}
+
+.details h2{
+    font-size: 50px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.navigation ul{
+	margin: 3px;
+	padding: 8px;
+	list-style: none;
+}
+
+	.navigation ul li{
+		display: inline-block;
+}
+
+	.navigation ul li a{
+		display: block;
+		padding: 0.3rem 0.6em;
+		border-radius: 3px;
+		transition: all 0.5s linear;
+}
+
+	.navigation ul li a:hover{
+		background: #B93DCF;
+		color:white;
+}
+
+font-family: 'Roboto', sans-serif;

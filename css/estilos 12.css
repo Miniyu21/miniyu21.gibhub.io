@@ -1,0 +1,113 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	background-color: #FDEBD0;
+	font-family: arial;
+}
+.title_body h1{
+	text-align: center;
+	font-size: 35px;
+	margin: 15px 0px 10px;
+	color: #8D58F8 ;
+	text-shadow: 0px, 0px, 10px #fff;
+}
+
+.title_body h4{
+	text-align: center;
+	font-size: 13px;
+	color: #9767F8;
+	text-shadow: 0px, 0px, 10px #fff;
+}
+.contenedor{
+	width: 90%;
+	max-width: 900px;
+	margin: auto;
+	height: 80vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.tabla{
+width: 33%;
+	height: 550px;
+	margin: auto;
+	border: 3px solid #D4B4F5 ;
+	border-radius: 4px;
+	box-shadow: 0px, 0px, 4px, 0px #FA8072 ;
+	padding: 60px;
+	text-align: center;
+	flex-grow: 1;
+	color: #F98E8E ;
+}
+.tabla>h2{
+	font-size: 30px;
+	margin-bottom: 35px;
+}
+
+.tabla img{
+	width:120px ;
+	height: 100px;
+	margin-bottom: 35px;
+
+}
+.tabla > h3{
+	font-size: 30px;
+	border-bottom: 20px;
+}
+
+.tabla < p{
+	display: block;
+	border-bottom: 20px;
+}
+.boton {
+	display: inline-block;
+	width: 150px;
+	padding: 12px;
+	background: #76D7C4;
+	text-decoration: none;
+	color: white;
+	border-radius: 100px;
+	text-align: center;
+	font-size: 15px;
+	font-weight: 500;
+	margin: auto;
+}
+.boton:hover{
+	background: rgb(189, 141, 246);
+	color: white;
+	cursor: pointer;
+	transition: all 150ms;
+}
+.tabla:hover{
+	background: #F09BF9;
+	color: #FFFFFF;
+	transition: 0.5 all;
+	transform: scale(1.1);
+	cursor: pointer;
+}
+@media screen and(max-width: 1000px){
+	.tabla{
+		width: 45%;
+		max-width: none;
+		margin-bottom: 40px;
+		flex-grow: initial;
+	}
+
+}
+@media screen and(max-width: 700px){
+	.tabla{
+		width: 45%;
+		padding: 30px;
+	}
+	.tabla>h2{
+		margin-top: 40px;
+	}
+}
+
+@media screen and (max-width: 550) {
+}

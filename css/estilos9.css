@@ -1,0 +1,184 @@
+*{ 
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+ }
+
+
+body{
+    background: #000000;
+    font-family: Aharoni;
+    color: white;
+}
+
+.logo-nav-container{
+	display: flex;
+	justify: space-between;
+	aling-items: center;
+    list-style: none;
+}
+
+	.logo {
+	letter spacing: 10px;
+	font-size: 1.6em;
+         list-style: none;
+        margin-right: 15px;
+
+}
+
+	.navigation ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+        
+}
+
+	.navigation ul li{
+		display: inline-block;
+         list-style: none;
+}
+
+	.navigation ul li a{
+		display: block;
+		padding: 0.5rem 2.5em;
+		border-radius: 5px;
+		transition: all 0.6s linear;
+         list-style: none;
+        color: white;
+     
+}
+
+	.navigation ul li a:hover{
+		background: #E800FF;
+		color: white;
+         list-style: none;
+}
+
+.title_body h1, h4{
+    text-align: center;
+    font-size: 35px;
+    margin: 15px 0px 30px;
+}
+
+.title_body h4{
+    text-align: center;
+    font-size: 13px;
+    color: white;
+    text-shadow: 0px 0px 10px #FFFFFF;
+}
+
+.contenedor{
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+    height: 80vh; /*vh=ventana horizontal*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.tabla{
+   
+    width: 31%;
+    height: 600px;
+    margin: auto;
+    border: 1px solid #E482FF;
+    border-radius: 4px;
+    box-shadow: 0px 0px 4px 0px #FF56B5 ;
+    padding: 60px;
+    text-align: center;
+    flex-grow: 1;
+    color: #FF56B5;
+}
+
+.tabla > h2{
+    font-size: 30px;
+    margin-bottom: 35px;
+}
+
+.tabla > img{
+    width: 230px;
+    height: 230px;
+    margin-bottom: 35px;
+}
+
+.tabla > h3{
+    font-size: 30px;
+    border-bottom: 20px;
+}
+
+.tabla > p{
+    display: block;
+    border-bottom: 20px;
+}
+
+.boton {
+    display: inline-block;
+    width: 150px;
+    padding: 12px;
+    background: #62C6FF;
+    text-decoration: none;
+    color: white;
+    border-radius: 100px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 500;
+    margin: auto;
+}
+
+.boton:hover{
+    background: #FF006E;
+    color: white;
+    border: none;
+    transition:  all 300ms;
+}
+
+.tabla:hover, .hover{
+    background: #0AFBFF;
+    color: darkblue;
+    transition: 0.5s all;
+    transform: scale(1.0);
+    cursor: pointer;
+}
+
+@media screen and (max-width:1000px){
+    .tabla{
+        width: 45%;
+        max-width: none;
+        margin-bottom: 40px;
+        flex-grow: initial;
+    }
+    
+ @media screen and (max-width: 700px){
+        .tabla{
+            width: 45%;
+            padding: 30px;
+        }
+        
+        .tabla > h2 { 
+        margin-top: 40px;
+        }
+     @media screen and (max-width: 550px){ 
+         .tabla{
+             width: 85%;
+             padding: 20px; }
+         }
+
+
+.outer-footer{
+    margin-top: 35px;
+    margin-left: 20px;
+    top: 25px;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    background-color: black;
+}
+
+.outer-footer a{
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+     
+
